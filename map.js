@@ -54,3 +54,16 @@ const students = [
 
 const studentWithIds = students.map(students => [students.name, students.id]);
 console.log(studentWithIds);
+
+const arrObj = students.map(({id, name}) => {
+  return  {id, name}
+})
+
+console.log(arrObj)
+
+students.map(students => {
+  students.age = students.name.length * 5;
+  
+})
+
+console.log(students)
